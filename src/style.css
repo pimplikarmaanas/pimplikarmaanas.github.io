@@ -1,12 +1,21 @@
 .wrapper {
+    font-family: 'Chivo', sans-serif;
     margin: auto;
-    max-width: 1000px;
+    max-width: 1100px;
+}
+
+.title-wrapper {
+    max-height: 200px;
 }
 
 .title {
-    font-family: 'Chivo', sans-serif;
     text-align: center;
-    font-size: 3vw;
+    font-size: 60px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-top: -30px;
 }
 
 .pfp {
@@ -22,19 +31,27 @@
 }
 
 hr.double {
-    border-top: 3px double;
+    border-top: 3px solid;
     border-bottom: none;
+    color: black;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .caption {
     text-align: center;
 }
 
-.subtext {
-    font-family: 'Chivo', sans-serif;
-    text-align: center;
+.introduction {
+    text-align: left;
     font-weight: bold;
 
     border-left: auto;
     border-right: auto;
+}
+
+.resume-section {
+    font-weight: bolder;
+    font-size: 40px;
 }
