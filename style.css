@@ -1,0 +1,40 @@
+.wrapper {
+    margin: auto;
+    max-width: 1000px;
+}
+
+.title {
+    font-family: 'Chivo', sans-serif;
+    text-align: center;
+    font-size: 3vw;
+}
+
+.pfp {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: -3em;
+
+    border-radius: 50%;
+    width: 300px;
+}
+
+hr.double {
+    border-top: 3px double;
+    border-bottom: none;
+}
+
+.caption {
+    text-align: center;
+}
+
+.subtext {
+    font-family: 'Chivo', sans-serif;
+    text-align: center;
+    font-weight: bold;
+
+    border-left: auto;
+    border-right: auto;
+}
