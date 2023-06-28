@@ -1,7 +1,12 @@
-.wrapper {
+.page-wrapper {
     font-family: 'Chivo', sans-serif;
     margin: auto;
     max-width: 1100px;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 2em;
 }
 
 .title-wrapper {
@@ -27,7 +32,7 @@
     margin-bottom: -3em;
 
     border-radius: 50%;
-    width: 300px;
+    width: 200px;
 }
 
 hr.double {
@@ -51,7 +56,42 @@ hr.double {
     border-right: auto;
 }
 
-.resume-section {
+.section-title {
+    text-decoration: 
+        underline 
+        solid 
+        black 
+        2px;
+    text-underline-offset: 6px;
+
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 45px;
+}
+
+.section-item {
+    margin-top: -30px;
+    margin-bottom: 40px;
+}
+
+.section-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-item-title {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.section-item-date {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.section-item-caption {
+    font-size: 15px;
+    margin-top: -15px;
+    margin-bottom: 20px;
 }
