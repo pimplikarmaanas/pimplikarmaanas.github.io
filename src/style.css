@@ -1,6 +1,7 @@
 .page-wrapper {
     font-family: 'Chivo', sans-serif;
     margin: auto;
+    width: auto;
     max-width: 1080px;
 }
 
