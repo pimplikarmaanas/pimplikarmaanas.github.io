@@ -5,6 +5,11 @@
     max-width: 1080px;
 }
 
+body {
+    color: black;
+    background: white;
+}
+
 .tab {
     display: inline-block;
     margin-left: 2em;
@@ -101,4 +106,27 @@ hr.double {
     font-weight: normal;
     font-size: 20px;
     margin-top: -5px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: white;
+        background: #181717;
+    }
+
+    hr.double {
+        color: white;
+    }
+
+    .section-title {
+        text-decoration:
+            underline 
+            solid 
+            white 
+            2px;
+    }
+
+    body a {
+        color: #809fff;
+    }
 }
