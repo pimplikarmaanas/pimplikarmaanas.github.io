@@ -10,6 +10,15 @@ body {
     background: white;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    opacity: 75%;
+}
+
 .tab {
     display: inline-block;
     margin-left: 2em;
@@ -124,9 +133,5 @@ hr.double {
             solid 
             white 
             2px;
-    }
-
-    body a {
-        color: #809fff;
     }
 }
