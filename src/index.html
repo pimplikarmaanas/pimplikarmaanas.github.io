@@ -18,10 +18,8 @@
         <input type="checkbox" id="checkbox">
         <span class="slider round"></span>
       </label>
-        <!-- Title div -->
         <div>
           <figure>
-            <!-- <img class="pfp" src="pictures/profile_pic.JPG" alt="Profile picture"> -->
             <video muted="muted" loop="loop" class="pfp" 
               onmouseover="this.play();" onmouseout="this.currentTime=0; this.pause();" name="Graduation">
               <source src="pictures/Graduation_Video.MOV">
@@ -49,7 +47,8 @@
         
         <!-- Introduction div-->
         <div class="introduction">
-          <p>My name is Maanas Pimplikar and I am a new graduate from Rutgers University - New Brunswick, 
+          <p>
+            My name is Maanas Pimplikar and I am a new graduate from Rutgers University - New Brunswick, 
             with a Bachelors of Science in Computer Science and a minor in Data Science.
             <br><br>
             My current interests are Machine Learning/Artificial Intelligence, Cloud engineering, and Distributed Systems.
@@ -96,11 +95,43 @@
 
         <div class="section-item">
           <div class="section-item-wrapper">
+            <h2 class="section-item-title">Software Development Engineer</h2>
+            <p class="section-item-date">June 2025 - Current</p>
+          </div>
+          <h3 class="section-item-company">Amazon</h3>
+          <h3 class="section-item-caption">Bellevue, WA</h3>
+
+          <ul class="section-item-list">
+            <li>Incoming Software Development Engineer.</li>
+          </ul>
+        </div>
+
+        <div class="section-item">
+          <div class="section-item-wrapper">
+            <h2 class="section-item-title">Cloud Engineer - OMNI</h2>
+            <p class="section-item-date">July 2024 - May 2025</p>
+          </div>
+          <h3 class="section-item-company">Deloitte Touche Tohmatsu Limited</h3>
+          <h3 class="section-item-caption">Princeton, NJ</h3>
+
+          <ul class="section-item-list">
+            <li>Reduced database access points by 70% throughout the multi-cloud architecture to enhance security.</li>
+            <li>Integrated a robust monitoring tool for the service, providing real-time logging and tracing.</li>
+            <li>Improved AWS and Azure infrastructure, leading to a 10% decrease in response time of the service API.</li>
+            <li>Implemented a tool that periodically pings the service’s APIs in order to assess their health and provide statistics,
+                improving service health visibility and allowing all APIs to be monitored on a central page.</li>
+            <li>Used queries provide insights from the data ingested from monitoring tools, providing an executive dashboard to monitor the whole service.</li>
+            <li>Created a notification system to alert engineers when the monitoring tool has detected anomalies, effectively reducing response times to an instant.</li>
+          </ul>
+        </div>
+
+        <div class="section-item">
+          <div class="section-item-wrapper">
             <h2 class="section-item-title">Cloud Engineering Intern - OMNI</h2>
             <p class="section-item-date">June 2023 - August 2023</p>
           </div>
-          <h3 class="section-item-caption">Deloitte Touche Tohmatsu Limited</h3>
-          <h3 class="section-item-caption">Remote</h3>
+          <h3 class="section-item-company">Deloitte Touche Tohmatsu Limited</h3>
+          <h3 class="section-item-caption">Princeton, NJ</h3>
 
           <ul class="section-item-list">
             <li>Part of the <b>O</b>bject <b>M</b>anaged <b>N</b>eural <b>I</b>nventory 
@@ -117,8 +148,8 @@
             <h2 class="section-item-title">Cyber Security Intern - GEMS</h2>
             <p class="section-item-date">June 2022 - August 2022</p>
           </div>
-          <h3 class="section-item-caption">Deloitte Touche Tohmatsu Limited</h3>
-          <h3 class="section-item-caption">Remote</h3>
+          <h3 class="section-item-company">Deloitte Touche Tohmatsu Limited</h3>
+          <h3 class="section-item-caption">Princeton, NJ</h3>
 
           <ul class="section-item-list">
             <li>Used monitoring and OSINT tools to research user-reported emails
@@ -136,6 +167,21 @@
       <!-- Projects div -->
       <div>
         <h1 class="section-title">Project Experience</h1>
+
+        <div class="section-item">
+          <div class="section-item-wrapper">
+            <h2 class="section-item-title">Jayce</h2>
+            <p class="section-item-date">November 2024</p>
+          </div>
+          <h3 class="section-item-caption">Python, AWS, Spotify API</h3>
+
+          <ul class="section-item-list">
+            <li>Developed a program that automatically saves a user’s recently played songs on a playlist.</li>
+            <li>Songs are assigned a lifetime, which dictates how long they stay in the playlist before being rotated out.</li>
+            <li>Song’s lifetime determined by how similar it is to the user’s music preferences using a KNN model.</li>
+            <li>Service deployed on AWS using serverless deployment, with an efficient and scalable architecture.</li>
+          </ul>
+        </div>
 
         <div class="section-item">
           <div class="section-item-wrapper">
