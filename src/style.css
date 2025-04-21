@@ -122,6 +122,12 @@ hr.double {
     font-size: 15px;
 }
 
+.section-item-company {
+    font-size: 20px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
 .section-item-caption {
     font-size: 15px;
     margin-top: -15px;
@@ -132,6 +138,7 @@ hr.double {
     font-weight: normal;
     font-size: 20px;
     margin-top: -5px;
+    margin-bottom: 1px;
 }
 
 /* slider */
