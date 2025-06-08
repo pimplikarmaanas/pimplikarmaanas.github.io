@@ -1,8 +1,27 @@
-.page-wrapper {
-    font-family: 'Chivo', sans-serif;
+@import url("https://fonts.cdnfonts.com/css/jetbrains-mono-2");
+
+:root {
+    --font-family: "JetBrains Mono", monospace;
+    --line-height: 1.20rem;
+    --border-thickness: 2px;
+    --text-color: #000;
+    --text-color-alt: #666;
+    --background-color: #fff;
+    --background-color-alt: #eee;
+
+    --font-weight-normal: 500;
+    --font-weight-medium: 600;
+    --font-weight-bold: 800;
+
+    font-family: var(--font-family);
+    font-optical-sizing: auto;
+    font-weight: var(--font-weight-normal);
+    font-style: normal;
+    font-variant-numeric: tabular-nums lining-nums;
+    font-size: 16px;
     margin: auto;
     width: auto;
-    max-width: 1080px;
+    max-width: 50%;
 }
 
 /* variables */
@@ -115,6 +134,7 @@ hr.double {
     display: inline-block;
     font-weight: bold;
     font-size: 30px;
+    margin-top: 1em;
 }
 
 .section-item-date {
@@ -138,69 +158,59 @@ hr.double {
     font-weight: normal;
     font-size: 20px;
     margin-top: -5px;
-    margin-bottom: 1px;
+    margin-bottom: 10px;
 }
 
-/* slider */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 24px;
-    margin-left: 10px;
-}
-  
-/* Hide default HTML checkbox */
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-/* The slider */
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
+input {
+  border: var(--border-thickness) solid var(--text-color);
+  padding: 
+    calc(var(--line-height) / 2 - var(--border-thickness))
+    calc(1ch - var(--border-thickness));
+  margin: 0;
+  font: inherit;
+  font-weight: inherit;
+  height: calc(var(--line-height) * 2);
+  width: auto;
+  overflow: visible;
+  background: var(--background-color);
+  color: var(--text-color);
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
 }
 
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
+input[type=checkbox] {
+  display: inline-grid;
+  place-content: center;
+  vertical-align: top;
+  width: 2ch;
+  height: var(--line-height);
+  cursor: pointer;
+}
+input[type=checkbox]:checked:before {
+  content: "";
+  width: 1ch;
+  height: calc(var(--line-height) / 2);
+  background: var(--body-bg);
 }
 
-input:checked + .slider {
-    background-color: #2196F3;
+input:focus {
+  --border-thickness: 3px;
+  outline: none;
 }
 
-input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+input {
+  width: calc(round(down, 100%, 1ch));
 }
-
-input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+::placeholder {
+  color: var(--text-color-alt);
+  opacity: 1;
 }
-
-/* Rounded sliders */
-.slider.round {
-    border-radius: 34px;
+::-ms-input-placeholder {
+  color: var(--text-color-alt);
 }
-
-.slider.round:before {
-    border-radius: 50%;
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0
 }
